@@ -1,0 +1,10 @@
+create database funsoft;
+use funsoft;
+create table Usuarios (
+ Id_Usuario int not null auto_increment,
+ nombre varchar(25) not null,
+ email varchar(25) not null,
+ password varchar(20) not null,
+ fecha_registro datetime not null,
+ activo tinyint not null,
+ primary key(Id_Usuario));
